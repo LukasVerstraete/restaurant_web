@@ -17,7 +17,7 @@ public class Initializer implements WebApplicationInitializer
         ctx.register(ApplicationConfig.class);
         ctx.setServletContext(sc);
        
-        ServletRegistration.Dynamic dynamic = sc.addServlet("dispatcherServlet", new DispatcherServlet(ctx));
+        ServletRegistration.Dynamic dynamic = sc.addServlet("dispatcher", new DispatcherServlet(ctx));
         dynamic.addMapping("/");
         dynamic.setLoadOnStartup(1);
     }

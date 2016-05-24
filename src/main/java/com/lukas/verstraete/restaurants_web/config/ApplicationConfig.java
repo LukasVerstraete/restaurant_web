@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableWebMvc
 public class ApplicationConfig {
     
-    @Bean
+    @Bean(destroyMethod = "closeConnection")
     public RestaurantFacade services()
     {
         return new RestaurantFacade();
