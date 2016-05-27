@@ -1,5 +1,9 @@
 package com.lukas.verstraete.restaurants_web.web;
 
+/*
+    Author: Lukas Verstraete
+*/
+
 import com.lukas.verstraete.restaurants_domain.domain.Restaurant;
 import com.lukas.verstraete.restaurants_domain.service.RestaurantFacade;
 import com.lukas.verstraete.restaurants_domain.util.ServiceException;
